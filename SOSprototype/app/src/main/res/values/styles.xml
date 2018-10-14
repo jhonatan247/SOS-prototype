@@ -1,11 +1,50 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/edittext_textsize</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/whiteSmoke</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="ButtonLarge">
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
+    <style name="ButtonLargeAcent">
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
+
+
+    <style name="AppTheme.BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppTheme.BottomSheetStyle</item>
+    </style>
+
+    <style name="AppTheme.BottomSheetDialog.Custom" parent="AppTheme.BottomSheetDialog">
+        <item name="bottomSheetBuilderItemTextColor">@color/colorPrimaryDark</item>
+        <item name="bottomSheetBuilderBackgroundColor">@android:color/white</item>
+        <item name="bottomSheetBuilderTitleTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">true</item>
+    </style>
 </resources>

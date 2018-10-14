@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Options">
+        <menu>
+
+            <item
+                android:title="Request an account" android:id="@+id/signUpItem" />
+            <item
+                android:title="About this project" android:id="@+id/aboutProjectItem" />
+            <item
+                android:title="Events and news" android:id="@+id/eventsAndNewsItem" />
+            <item
+                android:title="Donations" android:id="@+id/donationsItem" />
+            <item
+                android:title="Help" android:id="@+id/helpItem" />
+        </menu>
+    </item>
+</menu>

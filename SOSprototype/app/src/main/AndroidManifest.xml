@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.colombiandentist.www.sos_prototype">
+package="co.colombiandentist.www.sos_prototype">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+<!-- To auto-complete the email text field in the login form with the user's emails -->
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.READ_PROFILE" />
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+<uses-feature android:name="android.hardware.Camera" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="co.colombiandentist.www.sos_prototype"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+
+    <activity android:name=".Presentacion.Activity.StartActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".Presentacion.Activity.InicioActivity"
+        android:label="@string/title_activity_inicio"
+        android:theme="@style/AppTheme" />
+    <activity android:name=".Presentacion.Activity.SignUpActivity"></activity>
+    <activity android:name=".Presentacion.Activity.SearchActivity" />
+    <activity android:name=".Presentacion.Activity.ChatActivity" />
+    <activity android:name=".Presentacion.Activity.CourseActivity" />
+    <activity android:name=".Presentacion.Activity.TeacherActivity" />
+    <activity android:name=".Presentacion.Activity.ComentsActivity" />
+    <activity android:name=".Presentacion.Activity.SearchResultActivity" />
+    <activity android:name=".Presentacion.Activity.GroupActivity" />
+    <activity android:name=".Presentacion.Activity.PersonActivity" />
+    <activity android:name=".Presentacion.Activity.EventActivity" />
+    <activity android:name=".Presentacion.Activity.ConversationActivity" />
+    <activity android:name=".Presentacion.Activity.AccountActivity" />
+    <activity android:name=".Presentacion.Activity.PersonInformationActivity" />
+    <activity android:name=".Presentacion.Activity.WelcomeActivity" />
+    <activity android:name=".Presentacion.Activity.AboutActivity" />
+    <activity android:name=".Presentacion.Activity.CreatePostActivity"></activity>
+    <activity android:name=".Presentacion.Activity.NewsDetailActivity"></activity>
+</application>
 
 </manifest>

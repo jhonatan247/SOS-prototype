@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "275655732814",
+    "firebase_url": "https://sos-prototype.firebaseio.com",
+    "project_id": "sos-prototype",
+    "storage_bucket": "sos-prototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275655732814:android:3bc1531bc8be0962",
+        "android_client_info": {
+          "package_name": "co.colombiandentist.www.sos_prototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275655732814-ls2tc2hc3ivqa3o27pufhbo3t8e97bqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtwdMzdOxoBzYGpe8wKd03EAwGeoBOmro"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
